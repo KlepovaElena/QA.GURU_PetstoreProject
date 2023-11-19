@@ -1,5 +1,4 @@
-<h1 >Проект по автоматизации тестирования API сервиса <a href="https://reqres.in/"> Reqres</a></h1>
-<a href="https://petstore.swagger.io/#/"><img >
+<h1 >Проект по автоматизации тестирования API сервиса <a href="https://petstore.swagger.io/#/"> Petstore</a></h1>
 
 # :man_student:: Содержание:
 
