@@ -1,7 +1,9 @@
 package petstore.tests;
 
-import io.qameta.allure.Owner;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import petstore.data.TestData;
 import petstore.models.*;
@@ -11,13 +13,18 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static petstore.specs.Specs.*;
 
+@Owner("Klepova Elena")
+@Feature("Pets management")
+@Tags({@Tag("api"), @Tag("pet")})
+
 public class PetstoreTests extends TestBase{
 
     TestData testData = new TestData();
 
     @Test
-    @Owner("Elena Klepova")
     @DisplayName("Testing of successful pet creation")
+    @Story("Pet creation")
+    @Severity(SeverityLevel.CRITICAL)
     void successfulAddPetTest() {
 
         CreatePetModel pet = new CreatePetModel();
@@ -42,8 +49,9 @@ public class PetstoreTests extends TestBase{
     }
 
     @Test
-    @Owner("Elena Klepova")
     @DisplayName("Testing of successful pet finding")
+    @Story("Pet finding")
+    @Severity(SeverityLevel.CRITICAL)
     void successfulGetPetTest() {
 
         successfulAddPetTest();
@@ -64,8 +72,9 @@ public class PetstoreTests extends TestBase{
     }
 
     @Test
-    @Owner("Elena Klepova")
     @DisplayName("Testing of successful pet deletion")
+    @Story("Pet deletion")
+    @Severity(SeverityLevel.CRITICAL)
     void successfulDeletePetTest() {
 
         successfulAddPetTest();
@@ -87,8 +96,9 @@ public class PetstoreTests extends TestBase{
     }
 
     @Test
-    @Owner("Elena Klepova")
     @DisplayName("Testing of unsuccessful pet deletion when pet does not exist")
+    @Story("Pet deletion")
+    @Severity(SeverityLevel.NORMAL)
     void unsuccessfulDeletePetTest() {
 
         step("Delete a pet that does not exist", () ->
@@ -100,8 +110,9 @@ public class PetstoreTests extends TestBase{
     }
 
     @Test
-    @Owner("Elena Klepova")
     @DisplayName("Testing of unsuccessful pet finding when pet does not exist")
+    @Story("Pet finding")
+    @Severity(SeverityLevel.NORMAL)
     void unsuccessfulGetPetTest() {
 
         GetPetResponseModel response = step("Get a pet that does not exist", () ->
