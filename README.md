@@ -38,14 +38,14 @@
 <a id="jenkins"></a>
 ## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/QA.GURU_PetstoreProject/"> Jenkins </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/QA.GURU_PetstoreProject/allure/"><img src="media/screens/Petstore_jenkins.jpg" alt="Jenkins1"/></a>
+<a href="https://jenkins.autotests.cloud/job/QA.GURU_PetstoreProject/allure/"><img src="media/screens/Petstore_jenkins.png" alt="Jenkins1"/></a>
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
 
 ## 🧪: Пример авто-тест кейса
 <p align="center">
-<img title="AllureSuite" src="media/screens/Petstore_alluretc.jpg">
+<img title="AllureSuite" src="media/screens/Petstore_alluretc.png">
 </p>
 
 <a id="console"></a>
@@ -61,7 +61,7 @@ gradle clean test
 ## ⛅: Основной отчет
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/Petstore_allurereport.jpg">
+<img title="Allure Overview" src="media/screens/Petstore_allurereport.png">
 </p>
 
 <a id="allure"></a>
@@ -71,17 +71,17 @@ gradle clean test
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screens/Dashboard.png">
+<img title="Allure TestOps DashBoard" src="media/screens/Petstore_dashboard.png">
 </p>
 
 ## :pinching_hand:: Пример тест-кейса
 <p align="center">
-<img title="AllureTC" src="media/screens/TestCase.png">
+<img title="AllureTC" src="media/screens/Petstore_testcase.png">
 </p>
 
 ## :runner:: Прогоны
 <p align="center">
-<img title="Allure Tests" src="media/screens/launches.png">
+<img title="Allure Tests" src="media/screens/Petstore_launches.png">
 </p>
 
 <a id="tg"></a>
@@ -89,5 +89,5 @@ gradle clean test
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img title="telegram" src="media/screens/Petstore_telegram.jpg">
+<img title="telegram" src="media/screens/Petstore_telegram.png">
 </p>
