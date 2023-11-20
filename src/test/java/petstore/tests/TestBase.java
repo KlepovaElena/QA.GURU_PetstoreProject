@@ -3,7 +3,7 @@ package petstore.tests;
 import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
-import petstore.Config.ApiConfig;
+import petstore.сonfig.ApiConfig;
 
 public class TestBase {
 

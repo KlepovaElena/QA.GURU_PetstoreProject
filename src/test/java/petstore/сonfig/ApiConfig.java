@@ -1,4 +1,4 @@
-package petstore.Config;
+package petstore.сonfig;
 
 import org.aeonbits.owner.Config;
 
