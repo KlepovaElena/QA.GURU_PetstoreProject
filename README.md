@@ -38,14 +38,14 @@
 <a id="jenkins"></a>
 ## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/Rest_Api_EVShev/"> Jenkins </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/Rest_Api_EVShev/allure/"><img src="media/screens/Jenkins.png" alt="Jenkins1"/></a>
+<a href="https://jenkins.autotests.cloud/job/Rest_Api_EVShev/allure/"><img src="media/screens/Petstore_jenkins.jpg" alt="Jenkins1"/></a>
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
 
 ## 🧪: Пример авто-тест кейса
 <p align="center">
-<img title="AllureSuite" src="media/screens/AllureTC.png">
+<img title="AllureSuite" src="media/screens/Petstore_alluretc.jpg">
 </p>
 
 <a id="console"></a>
@@ -61,7 +61,7 @@ gradle clean test
 ## ⛅: Основной отчет
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/AllureReport.png">
+<img title="Allure Overview" src="media/screens/Petstore_allurereport.jpg">
 </p>
 
 <a id="allure"></a>
